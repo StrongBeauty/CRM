@@ -1,0 +1,34 @@
+.sidebar {
+  height: calc(100vh - var(--navbar-height));
+  width: var(--sidebar-width);
+  padding: 24px 32px;
+  flex-shrink: 0;
+  box-shadow: 0 0 5px 0 #02006040;
+  overflow-y: auto;
+  background-color: var(--text-primary-inverted);
+
+  @media (max-width: 768px) {
+    position: fixed;
+    left: 0;
+    z-index: 10;
+    .overlay {
+      display: block;
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: var(--sidebar-width);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.02);
+  z-index: 9;
+}
+
+.items {
+  font: var(--font-m);
+}

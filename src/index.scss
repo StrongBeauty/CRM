@@ -1,0 +1,78 @@
+:root {
+  --font-family-main: 'Montserrat', sans-serif;
+
+  --font-size-m: 20px;
+  --font-size-l: 26px;
+
+  --font-line-m: 24.38px;
+  --font-line-l: 31.69px;
+
+  --font-weight-s: 500;
+  --font-weight-m: 600;
+  --font-weight-l: 700;
+
+  --font-s: var(--font-weight-s) var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-m: var(--font-weight-m) var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-l: var(--font-weight-l) var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+  --font-xl: var(--font-weight-l) var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+  --bg-color: #4f27bf;
+
+  --text-primary: #1c1c1e;
+  --text-primary-inverted: #ffffff;
+  --text-secondary: #000000;
+  --text-help: #6c6c6c;
+  --text-link: #002bc5;
+  --dark-blue: #02006140;
+  --light-gray: #d7d7d7;
+
+  --navbar-height: 80px;
+  --sidebar-width: 300px;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font: var(--font-xl);
+}
+
+h3 {
+  font: var(--font-l);
+}
+
+body {
+  font: var(--font-m);
+  color: var(--text-primary);
+  overflow: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+}

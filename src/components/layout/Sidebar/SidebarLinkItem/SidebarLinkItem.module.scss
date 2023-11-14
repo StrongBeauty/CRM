@@ -1,0 +1,36 @@
+.item,
+.link {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  gap: 18px;
+}
+
+.item {
+  margin-top: 32px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 32px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding-left: 48px;
+}
+
+.arrowDown,
+.arrowUp {
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.arrowDown {
+  transform: scaleY(-1);
+}

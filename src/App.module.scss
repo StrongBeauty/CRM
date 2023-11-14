@@ -1,0 +1,22 @@
+.app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.content {
+  box-sizing: border-box;
+  height: calc(100vh - 80px);
+  width: 100%;
+  padding: 32px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}
